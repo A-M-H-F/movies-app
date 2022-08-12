@@ -22,7 +22,7 @@ function MovieDetails() {
   return (
     <div>
       { isPending && <div>Loading...</div> }
-      { error && <div>{ error }</div> }
+      {/* { error && <div>{ error }</div> } */}
       { movie && (
         <div className="movie-card">
           <div className="container">
