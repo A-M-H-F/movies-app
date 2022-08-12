@@ -29,7 +29,7 @@
 
 @media screen and (max-width: 600px) {
     .movie {
-        width: 14vh;
+        width: 22vh;
         margin: 1vh;
     }
     .overview h5 {
