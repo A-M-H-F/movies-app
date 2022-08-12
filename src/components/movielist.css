@@ -118,6 +118,10 @@
     justify-content: center;
 }
 
+..filter-c {
+    display: flex;
+    justify-content: center;
+}
 .filter-c button {
     margin-right: 1rem;
     min-width: 4rem;
