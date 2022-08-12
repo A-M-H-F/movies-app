@@ -1,7 +1,7 @@
 {
   "name": "main",
   "version": "0.1.0",
-  "node": "0.12.0",
+  "main": "server.js",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -25,18 +25,11 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "concurrently \"react-scripts start\" \"json-server --watch src/data/data.json --port 1998\"",
+    "start": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.jsx"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest",
-      "plugin: react/recommended"
-    ]
   },
   "browserslist": {
     "production": [
@@ -49,16 +42,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "eslint": "^8.21.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.28.0",
-    "eslint-plugin-react-hooks": "^4.3.0",
-    "prettier-eslint": "^15.0.1"
   }
 }
