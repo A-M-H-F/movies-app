@@ -52,8 +52,8 @@ function MovieList({ movies }) {
       <nav className="navbar">
         <input className="search" type="text" placeholder="Search..." onChange={(e) => searchData(e.target.value)} />
         <Filter movies={movies} setFilteredType={setFilteredType} activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
-        <SortMovie movies={movies} sortByYearSelected={sortByYearSelected} />
       </nav>
+      <SortMovie movies={movies} sortByYearSelected={sortByYearSelected} />
       <h1 className="filter-title">{activeCategory === '' ? 'ALL' + space + sortMovies.toUpperCase() : sortMovies.toUpperCase() + space + activeCategory.toUpperCase()}</h1>
       <div className="main">
         <h1 className="not-found">{sortMoviesByYear.length <= 0 ? 'Not Found...' : null}</h1>
