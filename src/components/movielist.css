@@ -26,7 +26,7 @@
 
 @media screen and (max-width: 600px) {
     .movie {
-        width: 22vh;
+        width: 23vh;
         margin: 1vh;
     }
     img:before {
