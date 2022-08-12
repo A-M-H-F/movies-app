@@ -34,10 +34,10 @@
     }
     .overview {
         display: flex;
-        justify-content: center;
     }
     .overview h5 {
         font-size: 16px;
+        justify-content: center;
     }
     .movie-info span {
         display: flex;
