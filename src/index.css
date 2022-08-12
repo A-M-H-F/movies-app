@@ -15,7 +15,7 @@ img:before {
   background-image: url(./assets/img/back-details-1.jpg);
   display: flex;
   width: 300px;
-  height: 410px;
+  height: 420px;
   z-index: 0;
 }
 
