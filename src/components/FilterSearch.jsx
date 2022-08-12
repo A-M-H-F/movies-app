@@ -12,9 +12,6 @@ function FilterSearchData({ filteredResults }) {
                         <span>{movie.releaseYear}</span>
                         <span>{movie.programType}</span>
                     </div>
-                    <div className="overview">
-                        <h5>{movie.title}</h5>
-                    </div>
                 </Link>
             </div>
         ))
