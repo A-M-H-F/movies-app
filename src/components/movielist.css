@@ -29,6 +29,15 @@
         width: 22vh;
         margin: 1vh;
     }
+    img:before {
+        content: " ";
+        font-size: 1000px;
+        background-image: url(./assets/img/back-details-1.jpg);
+        display: flex;
+        width: 300px;
+        height: 210px;
+        z-index: 0;
+      }
 }
 
 .movie img {
