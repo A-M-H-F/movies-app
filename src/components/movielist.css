@@ -139,11 +139,11 @@ button.active {
     margin-top: revert;
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .filter-c {
         width: 60%;
     }
     .filter-c button {
         width: 10%;
     }
-}
+} */
