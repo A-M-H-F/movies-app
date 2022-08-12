@@ -2,7 +2,7 @@ import MovieList from '../components/MovieList';
 import useFetch from '../components/useFetch';
 
 function Home() {
-  const { error, isPending, data: movies } = useFetch('https://movies-amhf.herokuapp.com/movies');
+  const { error, isPending, data: movies } = useFetch('https://movies-amhf.herokuapp.com/movies/');
   return (
     <div className="home">
       { error && <div>{ error }</div> }
