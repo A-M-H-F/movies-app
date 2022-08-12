@@ -25,7 +25,7 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "concurrently \"react-scripts start\" \"json-server --watch src/data/data.json --port 1998\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
