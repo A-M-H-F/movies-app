@@ -66,6 +66,9 @@
     }
 }
 
+.s-name {
+    display: flex;
+}
 .search .nosubmit {
     border: none;
     padding: 0;

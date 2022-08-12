@@ -55,9 +55,9 @@ function MovieList({ movies }) {
       <span className="nosubmit">
         <Filter movies={movies} setFilteredType={setFilteredType} activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
       </span>
-      <span>
-      <SortMovie movies={movies} sortByYearSelected={sortByYearSelected} />
-      <h1 className="filter-title">{activeCategory === '' ? 'ALL' + space + sortMovies.toUpperCase() : sortMovies.toUpperCase() + space + activeCategory.toUpperCase()}</h1>
+      <span className="s-name">
+        <SortMovie movies={movies} sortByYearSelected={sortByYearSelected} />
+        <h1 className="filter-title">{activeCategory === '' ? 'ALL' + space + sortMovies.toUpperCase() : sortMovies.toUpperCase() + space + activeCategory.toUpperCase()}</h1>
       </span>
       <div className="main">
         <h1 className="not-found">{sortMoviesByYear.length <= 0 ? 'Not Found...' : null}</h1>
