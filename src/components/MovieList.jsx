@@ -53,7 +53,6 @@ function MovieList({ movies }) {
         <input className="nosubmit" type="search" placeholder="Search Movie / Series..." onChange={(e) => searchData(e.target.value)} />
       </nav>
       <nav className="nosubmit">
-        <h6>Filter By:</h6>
         <SortMovie movies={movies} sortByYearSelected={sortByYearSelected} />
         <Filter movies={movies} setFilteredType={setFilteredType} activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
       </nav>
