@@ -5,7 +5,7 @@ import './moviedetails.scss';
 function MovieDetails() {
   const { id } = useParams();
 
-  const { data: movie, error, isPending } = useFetch(`http://localhost:1998/movies/${id}`);
+  const { data: movie, error, isPending } = useFetch(`https://movies-amhf.herokuapp.com/movies/${id}`);
 
   // const history = useHistory();
 
