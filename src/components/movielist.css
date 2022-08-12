@@ -42,7 +42,13 @@
         width: 100%;
     }
     .select-filter-container {
-        margin-right: 15px;
+        width: 20%;
+    }
+    .filter-c {
+        width: 50%;
+    }
+    .filter-c button {
+        margin-right: 1px;
     }
 }
 
@@ -124,12 +130,9 @@
     justify-content: center;
 }
 
-.filter-c {
-    width: 70%;
-    /* display: flex;
-    justify-content: center; */
-}
+
 .filter-c button {
+    margin-right: 1rem;
     min-width: 4rem;
     padding: 0.5rem 1rem;
     border-radius: 50px;
