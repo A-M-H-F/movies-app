@@ -42,17 +42,13 @@
         z-index: 0;
     }
 
-    .search {
-        width: 100%;
-    }
-
     .search .nosubmit {
         border: none;
         padding: 0;
     }
 
     input.nosubmit {
-        width: 260px;
+        width: 200px;
         border: 1px solid #555;
         display: block;
         padding: 9px 4px 9px 40px;
