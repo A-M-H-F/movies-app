@@ -37,7 +37,7 @@
     }
     .overview h5 {
         font-size: 16px;
-        justify-content: center;
+        justify-content: space-between;
     }
     .movie-info span {
         display: flex;
@@ -137,7 +137,6 @@ input.nosubmit {
     margin-top: 0;
     text-align: center;
     color: antiquewhite;
-    background-color: #22254b;
 }
 
 .movie:hover .overview {
