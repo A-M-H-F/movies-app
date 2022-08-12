@@ -7,7 +7,7 @@ function MovieCard({ filteredType, moreMovies }) {
       filteredType.slice(0, moreMovies).map((movie) => (
 
             <div key={movie.id} className="movie">
-              <Link to={`/movies/${movie.id}/${movie.title.toLowerCase().replace(urlRegex, '-')}`} style={{ textDecoration: 'none' }}>
+              <Link to={`/movies/${movie.id}`} style={{ textDecoration: 'none' }}>
                 <img src={movie.images['Poster Art'].url} alt="cover" />
                 <div className="movie-info">
                   <span>{movie.releaseYear}</span>
