@@ -27,7 +27,7 @@ function Create() {
       releaseYear,
     };
 
-    fetch('https://amhf-movies.herokuapp.com/movies/', {
+    fetch('https://movies-amhf.herokuapp.com/movies/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(movie),
