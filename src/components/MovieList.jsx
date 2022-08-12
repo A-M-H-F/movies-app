@@ -52,11 +52,13 @@ function MovieList({ movies }) {
       <nav className="nosubmit">
         <input className="nosubmit" type="search" placeholder="Search Movie / Series..." onChange={(e) => searchData(e.target.value)} />
       </nav>
-      <nav className="nosubmit">
+      <span className="nosubmit">
         <Filter movies={movies} setFilteredType={setFilteredType} activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
-      </nav>
+      </span>
+      <span>
       <SortMovie movies={movies} sortByYearSelected={sortByYearSelected} />
       <h1 className="filter-title">{activeCategory === '' ? 'ALL' + space + sortMovies.toUpperCase() : sortMovies.toUpperCase() + space + activeCategory.toUpperCase()}</h1>
+      </span>
       <div className="main">
         <h1 className="not-found">{sortMoviesByYear.length <= 0 ? 'Not Found...' : null}</h1>
         {
