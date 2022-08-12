@@ -6,7 +6,7 @@ function MovieYearCard({ moreMovies, sortMoviesByYear }) {
     sortMoviesByYear.slice(0, moreMovies).map((movie) => (
 
       <div key={movie.id} className="movie">
-        <Link to={`/movies/${movie.id}}`} style={{ textDecoration: 'none' }}>
+        <Link to={`/movies/${movie.id}`} style={{ textDecoration: 'none' }}>
           <img src={movie.images['Poster Art'].url} alt="" />
           <div className="movie-info">
             <span>{movie.releaseYear}</span>
