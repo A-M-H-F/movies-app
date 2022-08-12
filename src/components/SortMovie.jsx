@@ -17,7 +17,7 @@ function SortMovie({ movies, sortByYearSelected }) {
     return (
         <div className="select-filter-container">
             <select className="select-filter" data-live-search="true" onChange={sortByYear}>
-                <option value={'all'}>Sort By Year</option>
+                <option value={'all'}>Release Year</option>
                 {filterYears.map((year) => (
                     <option className="sort-option" value={year} key={year}>{year}</option>
                 ))}
