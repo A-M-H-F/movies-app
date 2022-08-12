@@ -39,7 +39,7 @@
         z-index: 0;
       }
     .search {
-        width: 40%;
+        width: 100%;
     }
     .select-filter-container {
         margin-right: 15px;
@@ -125,11 +125,11 @@
 }
 
 .filter-c {
-    display: flex;
-    justify-content: center;
+    width: 50%;
+    /* display: flex;
+    justify-content: center; */
 }
 .filter-c button {
-    margin-right: 1rem;
     min-width: 4rem;
     padding: 0.5rem 1rem;
     border-radius: 50px;
