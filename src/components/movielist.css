@@ -35,6 +35,10 @@
     .overview h5 {
         font-size: 16px;
     }
+    .movie-info {
+        display: flex;
+        justify-content: center;
+    }
     .movie-info span {
         font-size: 12px;
     }
