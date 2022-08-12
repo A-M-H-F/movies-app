@@ -28,7 +28,7 @@
 
 @media screen and (max-width: 600px) {
     .movie {
-        width: 22vh;
+        width: 15vh;
         margin: 1vh;
     }
 
@@ -54,7 +54,7 @@
         margin-right: 0;
     }
     input.nosubmit {
-        width: 90%;
+        width: 100%;
     }
 }
 
