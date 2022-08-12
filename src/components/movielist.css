@@ -55,10 +55,7 @@
 
     .select-filter-container {
         margin-left: 10px;
-    }
-
-    .filter-c {
-        width: 90%;
+        width: 20%;
     }
 
     .filter-c button {
