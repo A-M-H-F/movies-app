@@ -51,10 +51,10 @@ function MovieList({ movies }) {
       {/* NavBar for Search and Filter */}
       <nav className="nosubmit">
         <input className="nosubmit" type="search" placeholder="Search Movie / Series..." onChange={(e) => searchData(e.target.value)} />
-        <SortMovie movies={movies} sortByYearSelected={sortByYearSelected} />
       </nav>
       <nav className="navbar">
         <Filter movies={movies} setFilteredType={setFilteredType} activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
+        <SortMovie movies={movies} sortByYearSelected={sortByYearSelected} />
       </nav>
 
       <h1 className="filter-title">{activeCategory === '' ? 'ALL' + space + sortMovies.toUpperCase() : sortMovies.toUpperCase() + space + activeCategory.toUpperCase()}</h1>
