@@ -32,16 +32,10 @@
         width: 14vh;
         margin: 1vh;
     }
-    .overview {
-        display: flex;
-    }
     .overview h5 {
         font-size: 16px;
-        justify-content: space-between;
     }
     .movie-info span {
-        display: flex;
-        justify-content: space-between;
         font-size: 12px;
     }
 
@@ -102,7 +96,6 @@ input.nosubmit {
 }
 
 .movie-info span {
-    background-color: #22254b;
     border-radius: 3px;
     font-weight: bold;
     padding: 0.25rem 0.5rem;
@@ -137,6 +130,7 @@ input.nosubmit {
     margin-top: 0;
     text-align: center;
     color: antiquewhite;
+    background-color: #22254b;
 }
 
 .movie:hover .overview {
