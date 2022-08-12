@@ -37,7 +37,7 @@
     }
     .more-info {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
     .movie-info span {
         font-size: 12px;
