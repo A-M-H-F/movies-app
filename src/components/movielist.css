@@ -41,11 +41,8 @@
     .search {
         width: 100%;
     }
-    .select-filter-container {
-        width: 10%;
-    }
     .filter-c {
-        width: 40%;
+        width: 60%;
     }
     .filter-c button {
         margin-right: 0;
