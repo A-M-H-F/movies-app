@@ -12,7 +12,7 @@
 .main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: stretch;
+    justify-content: center;
     background-color: #22254b;
     padding-bottom: 50px;
 }
