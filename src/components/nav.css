@@ -20,7 +20,6 @@ nav {
     font-family: inherit;
     font-size: 1rem;
     padding: 0.5rem 0.5rem;
-    width: 50%;
 }
 
 .select-filter {
@@ -34,7 +33,7 @@ nav {
 }
 .select-filter-container {
     background-color: transparent;
-    border-radius: 50px;
+    border-radius: 60px;
     color: #fff;
     padding: 0.5rem 1rem;
     width: 40%;

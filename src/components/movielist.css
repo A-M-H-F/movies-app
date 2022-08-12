@@ -38,6 +38,9 @@
         height: 220px;
         z-index: 0;
       }
+    .search {
+        width: 40%;
+    }
 }
 
 .movie img {
