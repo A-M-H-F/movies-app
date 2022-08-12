@@ -29,8 +29,14 @@
 
 @media screen and (max-width: 600px) {
     .movie {
-        width: 15vh;
+        width: 12vh;
         margin: 1vh;
+    }
+    .overview h5 {
+        font-size: 18px;
+    }
+    .movie-info span {
+        font-size: 14px;
     }
 
     img:before {
