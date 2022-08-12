@@ -1,0 +1,61 @@
+{
+  "name": "main",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "axios": "^0.27.2",
+    "bootstrap": "^5.2.0",
+    "bootstrap-select": "^1.13.18",
+    "compass-mixins": "^0.12.12",
+    "concurrently": "^7.3.0",
+    "framer-motion": "^7.1.0",
+    "json-server": "^0.17.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "5",
+    "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
+    "sass": "^1.54.3",
+    "use-fetch": "^0.0.7",
+    "web-vitals": "^2.1.0"
+  },
+  "scripts": {
+    "start": "concurrently \"react-scripts start\" \"json-server --watch src/data/data.json --port 1998\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint src/**/*.jsx"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "eslint: recommended",
+      "plugin: react/recommended"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0"
+  }
+}
