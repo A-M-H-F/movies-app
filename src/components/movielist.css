@@ -33,11 +33,7 @@
         margin: 1vh;
     }
     .overview h5 {
-        font-size: 16px;
-    }
-    .movie-info {
-        display: flex;
-        justify-content: center;
+        font-size: 14px;
     }
     .movie-info span {
         font-size: 12px;
