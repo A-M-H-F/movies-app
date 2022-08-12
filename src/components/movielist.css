@@ -68,6 +68,7 @@
 
 .s-name {
     display: flex;
+    justify-content: space-between;
 }
 .search .nosubmit {
     border: none;
