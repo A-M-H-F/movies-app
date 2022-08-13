@@ -46,7 +46,7 @@
     img:before {
         content: " ";
         font-size: 1000px;
-        background-image: url(../assets/img/back-details-1.jpg);
+        background-image: url(../img/back-details-1.jpg);
         display: flex;
         width: 300px;
         height: 260px;
