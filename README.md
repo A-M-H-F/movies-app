@@ -4,9 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## To run project locally 
     1. Add this to package.json (choose your port)
-        1. "start": "concurrently \"react-scripts start\" \"json-server --watch src/data/db.json --port 1998\""
+        - "start": "concurrently \"react-scripts start\" \"json-server --watch db.json --port 1998\""
     2. change the useFetch/Fetch URL in these files /pages (Create.jsx, Home.jsx, MovieDeatails.jsx) to:
-        1. http://localhost:1998/movies
+        - http://localhost:1998/movies
     3. ### `yarn start`
 
 ## Available Scripts
