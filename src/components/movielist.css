@@ -64,6 +64,9 @@
     input.nosubmit {
         width: 100%;
     }
+    .filter-title {
+        margin-right: 15px;
+    }
 }
 
 .s-name {
@@ -187,6 +190,7 @@ button.active {
 .filter-title {
     text-align: center;
     color: #eee;
+    margin-top: auto;
 }
 
 .not-found {
