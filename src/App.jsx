@@ -9,8 +9,11 @@ import Footer from './components/Footer';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 /*
-Run a JSON-Server to fetch data
-// "start": "concurrently \"react-scripts start\" \"json-server --watch src/data/data.json --port 1998\""
+To Run JSON-Server locally 
+  1- add this to package.json (choose your port)
+      "start": "concurrently \"react-scripts start\" \"json-server --watch src/data/data.json --port 1998\""
+  2- change the useFetch/Fetch URL in these files /pages (Create.jsx, Home.jsx, MovieDeatails.jsx) to:
+      http://localhost:1998/movies
 // yarn start
 */
 
