@@ -175,7 +175,7 @@ input.nosubmit {
     min-width: 4rem;
     padding: 0.5rem 1rem;
     border-radius: 50px;
-    border: 2px solid #22254b;
+    border: 1px solid #fff;
     background-color: transparent;
     color: #f1356d;
     font-weight: bold;
@@ -191,6 +191,7 @@ button.active {
     text-align: center;
     color: #eee;
     margin-top: auto;
+    margin-right: 50px;
 }
 
 .not-found {
