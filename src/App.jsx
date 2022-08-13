@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Refreshable } from 'react-router-refreshable'
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Create from './pages/Create';
@@ -14,22 +13,20 @@ function App() {
       <div className="App">
         <Navbar />
         <div className="content">
-          <Refreshable>
-            <Switch>
-              <Route exact path="/">
-                <Home />
-              </Route>
-              <Route path="/pages/create">
-                <Create />
-              </Route>
-              <Route path="/movies/:id">
-                <MovieDetails />
-              </Route>
-              <Route path="*">
-                <NotFound />
-              </Route>
-            </Switch>
-          </Refreshable>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/pages/create">
+              <Create />
+            </Route>
+            <Route path="/movies/:id">
+              <MovieDetails />
+            </Route>
+            <Route path="*">
+              <NotFound />
+            </Route>
+          </Switch>
           <Footer />
         </div>
       </div>
