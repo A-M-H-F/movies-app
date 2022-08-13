@@ -21,7 +21,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     4. <button onClick={handleClick}>delete</button>
 
 ## Extra Option - Add Random Rating/10 for movies
-    1. Create a new file like (RandomRating.jsx)
+    1. Create a new file ex: (RandomRating.jsx)
         1. Add this lines:
             const RandomRating = (min, max) => (
                 Math.floor(Math.random() * (max - min + 1)) + min
