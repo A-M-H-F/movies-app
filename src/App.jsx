@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <Router>
+    <Router forceRefresh={true}>
       <div className="App">
         <Navbar />
         <div className="content">
