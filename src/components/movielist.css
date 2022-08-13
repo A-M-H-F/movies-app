@@ -68,7 +68,8 @@
 
 .s-name {
     display: flex;
-    justify-content: flex-start;
+    text-align-last: justify;
+    justify-content: space-between;
 }
 .search .nosubmit {
     border: none;
