@@ -12,16 +12,6 @@ nav {
     color: rgb(255, 145, 0) !important;
 }
 
-.search {
-    background-color: transparent;
-    border: 2px solid #22254b;
-    border-radius: 50px;
-    color: #fff;
-    font-family: inherit;
-    font-size: 1rem;
-    padding: 0.5rem 0.5rem;
-}
-
 .select-filter {
     background-color: transparent;
     border: 1px solid #fff;

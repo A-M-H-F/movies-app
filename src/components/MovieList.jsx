@@ -50,7 +50,7 @@ function MovieList({ movies }) {
 
       {/* NavBar for Search and Filter */}
       <nav className="nosubmit">
-        <input className="nosubmit" type="search" placeholder="Search Movie / Series..." onChange={(e) => searchData(e.target.value)} />
+        <input className="nosubmit" type="search" placeholder="Search Movie / Series... min:3" onChange={(e) => searchData(e.target.value)} />
       </nav>
       <span className="nosubmit">
         <Filter movies={movies} setFilteredType={setFilteredType} activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
