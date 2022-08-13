@@ -60,8 +60,8 @@ function Create() {
             onChange={(e) => setProgramType(e.target.value)}
             name="ptype"
           >
-            <option value="series">movie</option>
-            <option value="movie">series</option>
+            <option value="movie">movie</option>
+            <option value="series">series</option>
           </select>
         </label>
         <label htmlFor="rdate">

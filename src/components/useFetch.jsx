@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 
+// This structure help assign any api url with data
 const useFetch = (url) => {
   const [data, setData] = useState(null);
   const [isPending, setIsPending] = useState(true);

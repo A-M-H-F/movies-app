@@ -15,8 +15,6 @@ Run a JSON-Server to fetch data
 */
 
 function App() {
-  // convert JSON data into 2 arrays
-  // let dataArr = Object.entries(getData)
 
   return (
     <Router>
