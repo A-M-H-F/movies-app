@@ -9,7 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
         - http://localhost:1998/movies
     3. ### `yarn start`
 
-## Delete Movie Function inside MovieDetails page (add this lines)
+## Extra Option - Delete Movie Function inside MovieDetails page (add this lines)
     1. import { useHistory } from 'react-router-dom';
     2. const history = useHistory();
     3. const handleClick = () => {
@@ -19,6 +19,20 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
             history.push('/'); // redirect to home page
         })
     4. <button onClick={handleClick}>delete</button>
+
+## Extra Option - Add Random Rating/10 for movies
+    1. Create a new file like (RandomRating.jsx)
+        1. Add this lines:
+            const RandomRating = (min, max) => (
+                Math.floor(Math.random() * (max - min + 1)) + min
+            );
+            export default RandomRating;
+    2. At MoviesCard.jsx File (import RandomRating from './RandomRating';)
+    3. Add this line to (MoviesCard.jsx) inside the (movie-info) section:
+        <span>
+            {RandomRating(4.5, 8.9)}
+            /10
+        </span>
 
 ## Available Scripts
 
