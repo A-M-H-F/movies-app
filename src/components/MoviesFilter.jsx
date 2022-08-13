@@ -13,7 +13,7 @@ function Filter({ movies, setActiveCategory, activeCategory, setFilteredType }) 
 
     return (
         <div className="filter-c">
-            <button type="button" className={activeCategory === movies || activeCategory === '' ? 'active' : ""} onClick={() => setActiveCategory('')}>All</button>
+            <button type="button" className={activeCategory === movies || activeCategory === '' ? 'active' : ""} onClick={() => setActiveCategory('')}>Show All</button>
             <button type="button" className={activeCategory === 'movie' ? 'active' : ""} onClick={() => setActiveCategory('movie')}>Movies</button>
             <button type="button" className={activeCategory === 'series' ? 'active' : ""} onClick={() => setActiveCategory('series')}>Series</button>
         </div>
