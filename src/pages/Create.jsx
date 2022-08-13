@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import './create.css';
+import '../assets/css/create.css';
 
 function Create() {
   const [title, setTitle] = useState('');
