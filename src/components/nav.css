@@ -49,6 +49,10 @@ nav {
     outline: none;
 }
 
+.f-right {
+    margin-left: 15px;
+}
+
 /* @media screen and (max-width: 650px) {
     .search {
         width: 35%;
