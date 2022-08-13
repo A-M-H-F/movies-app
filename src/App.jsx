@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import createHistory from 'history/createBrowserHistory'
+import { browserHistory } from 'react-router'
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Create from './pages/Create';
@@ -20,7 +20,7 @@ To Run JSON-Server locally
 function App() {
 
   return (
-    <Router history={createHistory}>
+    <Router history={browserHistory}>
       <div className="App">
         <Navbar />
         <div className="content">
