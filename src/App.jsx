@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Route, Switch } from 'react-router-dom';
+import { Refreshable } from 'react-router-refreshable'
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Create from './pages/Create';
@@ -9,7 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <Router forceRefresh={true}>
+    <Refreshable>
       <div className="App">
         <Navbar />
         <div className="content">
@@ -30,7 +31,7 @@ function App() {
           <Footer />
         </div>
       </div>
-    </Router>
+    </Refreshable>
   );
 }
 
