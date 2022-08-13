@@ -5,7 +5,7 @@ import Filter from './MoviesFilter';
 import SortMovie from './SortMovie';
 import MovieCard from './MoviesCard';
 import MovieYearCard from './MovieYearCard';
-import './movielist.css';
+import '../assets/css/movielist.css';
 
 function MovieList({ movies }) {
   const [searchTerm, setSearchTerm] = useState('');
