@@ -30,9 +30,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     2. At MoviesCard.jsx File (import RandomRating from './RandomRating';)
     3. Add this line to (MoviesCard.jsx) inside the (movie-info) section:
         <span>
-            {RandomRating(4.5, 8.9)}
+            {RandomRating(4.5, 8.9)} // everytime you filter or refresh rating number will change
             /10
         </span>
+    4. You do this also for MoviesDetails page;
 
 ## Available Scripts
 
