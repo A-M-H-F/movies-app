@@ -44,13 +44,7 @@
     }
 
     img:before {
-        content: " ";
-        font-size: 1000px;
-        background-image: url(../img/back-details-1.jpg);
-        display: flex;
-        width: 300px;
-        height: 200px;
-        z-index: 0;
+        height: 260px !important;
     }
 
     .select-filter-container {
