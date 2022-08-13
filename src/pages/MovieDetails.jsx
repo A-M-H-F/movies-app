@@ -1,6 +1,6 @@
 import { /* useHistory, */ useParams } from 'react-router-dom';
 import useFetch from '../components/useFetch';
-import './moviedetails.scss';
+import '../assets/scss/moviedetails.scss';
 
 function MovieDetails() {
   const { id } = useParams();
