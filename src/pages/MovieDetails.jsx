@@ -9,8 +9,8 @@ function MovieDetails() {
 
   return (
     <div>
-      { isPending && <div>Loading...</div> }
       { error && <div>{ error }</div> }
+      { isPending && <div>Loading...</div> }
       { movie && (
         <div className="movie-card">
           <div className="container">
