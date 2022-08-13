@@ -1,4 +1,4 @@
-import { /* useHistory, */ useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import useFetch from '../components/useFetch';
 import '../assets/scss/moviedetails.scss';
 
@@ -6,18 +6,6 @@ function MovieDetails() {
   const { id } = useParams();
 
   const { data: movie, error, isPending } = useFetch(`https://amhf-movies.herokuapp.com/movies/${id}`);
-
-  // const history = useHistory();
-
-  // handleClick Function to delete a movie
-  /*
-  const handleClick = () => {
-    fetch('http://localhost:1998/movies/' + movie.id, {
-      method: 'DELETE'
-    }).then(() => {
-      history.push('/');
-    })
-  } */
 
   return (
     <div>
@@ -50,7 +38,6 @@ function MovieDetails() {
                 <p>{ movie.description }</p>
               </div>
             </div>
-            {/* Delet Movie <button onClick={handleClick}>delete</button> */}
           </div>
         </div>
       )}

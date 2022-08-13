@@ -9,6 +9,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
         - http://localhost:1998/movies
     3. ### `yarn start`
 
+## Delete Movie Function inside MovieDetails page (add this lines)
+    1. import { useHistory } from 'react-router-dom';
+    2. const history = useHistory();
+    3. const handleClick = () => {
+            fetch('http://localhost:1998/movies/' + movie.id, {
+            method: 'DELETE'
+            }).then(() => {
+            history.push('/'); // redirect to home page
+        })
+    4. <button onClick={handleClick}>delete</button>
+
 ## Available Scripts
 
 In the project directory, you can run:

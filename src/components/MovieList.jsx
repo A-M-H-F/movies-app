@@ -1,18 +1,19 @@
 /* eslint-disable */
 import { useState } from 'react';
-import FilterSearchData from './FilterSearch';
 import Filter from './MoviesFilter';
 import SortMovie from './SortMovie';
 import MovieCard from './MoviesCard';
-import MovieYearCard from './MovieYearCard';
 import '../assets/css/movielist.css';
 
 function MovieList({ movies }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredResults, setFilteredResults] = useState([]);
+
   const [moreMovies, setMoreMovies] = useState(20);
+
   const [filteredType, setFilteredType] = useState([]);
   const [activeCategory, setActiveCategory] = useState('');
+
   const [sortMovies, setSortMovies] = useState('');
   const space = ' ';
 
@@ -61,9 +62,7 @@ function MovieList({ movies }) {
       </span>
       <div className="main">
         <h1 className="not-found">{sortMoviesByYear.length <= 0 ? 'Not Found...' : null}</h1>
-        {
-          searchTerm.length >= 3 ? <FilterSearchData filteredResults={filteredResults} /> : sortMovies && sortMovies !== 'all' ? <MovieYearCard sortMoviesByYear={sortMoviesByYear} moreMovies={moreMovies} /> : <MovieCard filteredType={filteredType} moreMovies={moreMovies} />
-        }
+        <MovieCard filteredType={filteredType} moreMovies={moreMovies} searchTerm={searchTerm} sortMovies={sortMovies} filteredResults={filteredResults} sortMoviesByYear={sortMoviesByYear} />
       </div>
       {moreMovies <= 100 && searchTerm.length <= 0 && sortMoviesByYear.length >= 20 ? <div className="load-more-container"><button type="button" className="load-more" onClick={loadMoreMovies}>Load More</button></div> : null}
     </div>

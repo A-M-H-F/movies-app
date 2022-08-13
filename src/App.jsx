@@ -5,10 +5,8 @@ import Create from './pages/Create';
 import MovieDetails from './pages/MovieDetails';
 import NotFound from './pages/NotFound';
 import Footer from './components/Footer';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
-/*
-To Run JSON-Server locally 
+/* To Run JSON-Server locally
   1- add this to package.json (choose your port)
       "start": "concurrently \"react-scripts start\" \"json-server --watch src/data/db.json --port 1998\""
   2- change the useFetch/Fetch URL in these files /pages (Create.jsx, Home.jsx, MovieDeatails.jsx) to:
@@ -17,7 +15,6 @@ To Run JSON-Server locally
 */
 
 function App() {
-
   return (
     <Router>
       <div className="App">
