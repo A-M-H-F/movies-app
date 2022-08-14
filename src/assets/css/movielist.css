@@ -197,11 +197,13 @@ button.active {
     margin-top: revert;
 }
 
-/* @media screen and (max-width: 600px) {
-    .filter-c {
-        width: 60%;
-    }
-    .filter-c button {
-        width: 10%;
-    }
-} */
+.clear-filter {
+    margin-left: 15px;
+    min-width: 4rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #f1356d;
+    font-weight: bold;
+    cursor: pointer;
+}
