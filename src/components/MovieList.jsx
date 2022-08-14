@@ -60,7 +60,7 @@ function MovieList({ movies }) {
     <div className="main-list">
       {/* NavBar for Search and Filter */}
       <nav className="nosubmit">
-        <input id="search-text" className="nosubmit" type="search" placeholder="Search Movie / Series... min:3" onChange={(e) => searchData(e.target.value)} />
+        <input id="search-text" className="nosubmit" type="search" placeholder="Search Movie / Series..." onChange={(e) => searchData(e.target.value)} />
         <button onClick={resetF} type="button" className="clear-filter">Clear Filter</button>
       </nav>
       <span className="nosubmit">
