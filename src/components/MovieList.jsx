@@ -52,7 +52,7 @@ function MovieList({ movies }) {
     searchData('')
     sortByYearSelected('all')
     setActiveCategory('')
-    searchText.value = ''
+    searchText.value = null
     selectYear.value = 'all'
   };
 
@@ -61,7 +61,7 @@ function MovieList({ movies }) {
       {/* NavBar for Search and Filter */}
       <nav className="nosubmit">
         <input className="nosubmit" type="search" placeholder="Search Movie / Series... min:3" onChange={(e) => searchData(e.target.value)} />
-        <button onClick={resetF()} type="button" className="clear-filter">Clear Filter</button>
+        <button onClick={resetF} type="button" className="clear-filter">Clear Filter</button>
       </nav>
       <span className="nosubmit">
         <Filter movies={movies} setFilteredType={setFilteredType} activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
