@@ -50,7 +50,7 @@ function MovieList({ movies }) {
     const selectYear = document.querySelector('#select-year');
     const searchText = document.querySelector('#search-text');
     searchData('');
-    sortByYearSelected('all');
+    sortByYearSelected('');
     setActiveCategory('');
     searchText.value = '';
     selectYear.value = 'all';
