@@ -56,13 +56,13 @@
         margin-right: 0;
     }
     input.nosubmit {
-        width: 100%;
+        width: 90%;
     }
     .filter-title {
         margin-right: 20px;
     }
     .clear-filter {
-        font-size: 6px;
+        font-size: 8px;
     }
 }
 
