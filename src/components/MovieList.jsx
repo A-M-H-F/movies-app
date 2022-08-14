@@ -46,14 +46,14 @@ function MovieList({ movies }) {
   };
 
   // reset all filter options
-  const resetF = () => {
-    sortByYearSelected('all');
-    setActiveCategory('');
-    const selectYear = document.querySelector('#select-year');
-    selectYear.value = 'all';
-    const searchText = document.querySelector('#search-text');
-    searchText.value = '';
-    searchData('');
+  let selectYear = document.querySelector('#select-year');
+  let searchText = document.querySelector('#search-text');
+  function resetF() {
+    searchData('')
+    searchText.value = ''
+    sortByYearSelected('all')
+    selectYear.value = 'all'
+    setActiveCategory('')
   };
 
   return (
