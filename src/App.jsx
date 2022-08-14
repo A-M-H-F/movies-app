@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <Router basename="/home">
+    <Router basename="/#">
       <div className="App">
         <Navbar />
         <div className="content">
