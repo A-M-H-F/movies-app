@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, BrowserRouter as Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Create from './pages/Create';
@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div className="App">
         <Navbar />
         <div className="content">
@@ -30,7 +30,7 @@ function App() {
           <Footer />
         </div>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
