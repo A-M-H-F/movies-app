@@ -48,19 +48,19 @@ function MovieList({ movies }) {
   // reset all filter options
   let selectYear = document.querySelector('#select-year');
   let searchText = document.querySelector('#search-text');
-  function resetF() {
-    searchData('')
-    sortByYearSelected('all')
-    setActiveCategory('')
-    searchText.value = null
-    selectYear.value = 'all'
+  const resetF = () => {
+    searchData('');
+    sortByYearSelected('all');
+    setActiveCategory('');
+    searchText.value = null;
+    selectYear.value = 'all';
   };
 
   return (
     <div className="main-list">
       {/* NavBar for Search and Filter */}
       <nav className="nosubmit">
-        <input className="nosubmit" type="search" placeholder="Search Movie / Series... min:3" onChange={(e) => searchData(e.target.value)} />
+        <input id="search-text" className="nosubmit" type="search" placeholder="Search Movie / Series... min:3" onChange={(e) => searchData(e.target.value)} />
         <button onClick={resetF} type="button" className="clear-filter">Clear Filter</button>
       </nav>
       <span className="nosubmit">
