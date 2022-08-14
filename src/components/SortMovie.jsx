@@ -8,7 +8,6 @@ function SortMovie({ movies, sortByYearSelected }) {
     const filterYears = getYears.filter(function (year, d) {
         return getYears.indexOf(year) == d;
     }).sort(function (a, b) { return a - b })
-    // console.log(filterYears)
 
     function sortByYear(e) {
         sortByYearSelected(e.target.value);
