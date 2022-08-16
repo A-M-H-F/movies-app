@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import useFetch from '../components/useFetch';
 import '../assets/scss/moviedetails.scss';
-import imgR from '../assets/img/back-details-1.jpg';
+import imgR from '../assets/img/back-details-2.jpg';
 
 function MovieDetails() {
   const { id } = useParams();

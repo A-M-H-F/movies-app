@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import imgR from '../assets/img/back-details-1.jpg';
+import imgR from '../assets/img/back-details-2.jpg';
 
 // Get All Movies Data and Build a movie card for each one / add a unique link for each movie to redirect to view movie details page
 function MovieCard({
