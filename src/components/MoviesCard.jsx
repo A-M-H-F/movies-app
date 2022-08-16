@@ -16,7 +16,7 @@ function MovieCard({
     changeF.slice(0, moreMovies).map((movie) => (
       <div key={movie.id} className="movie">
         <Link to={`/movies/${movie.id}/${movie.title.toLowerCase().replace(urlRegex, '-')}`} style={{ textDecoration: 'none' }}>
-          <img src={movie.images['Poster Art'].url} onError={(e) => { e.target.onerror = null; e.target.src = imgR; }} alt="cover" />
+          <img src={movie.images['Poster Art'].url} onError={(e) => { e.target.src = imgR; }} alt="cover" />
           <div className="movie-info">
             <span>{movie.releaseYear}</span>
             <span>{movie.programType}</span>

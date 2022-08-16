@@ -15,7 +15,7 @@ function MovieDetails() {
       { movie && (
         <div className="movie-card">
           <div className="container">
-            <img src={movie.images['Poster Art'].url} onError={(e) => { e.target.onerror = null; e.target.src = imgR; }} alt="cover" className="cover" />
+            <img src={movie.images['Poster Art'].url} onError={(e) => { e.target.src = imgR; }} alt="cover" className="cover" />
             <div className="hero">
               <div className="details">
                 <div className="title1">
