@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import useFetch from '../components/useFetch';
 import '../assets/scss/moviedetails.scss';
+import imgR from '../assets/img/back-details-1.jpg';
 
 function MovieDetails() {
   const { id } = useParams();
@@ -14,7 +15,7 @@ function MovieDetails() {
       { movie && (
         <div className="movie-card">
           <div className="container">
-            <img src={movie.images['Poster Art'].url} alt="cover" className="cover" />
+            <img src={movie.images['Poster Art'].url} onError={(e) => { e.target.onerror = null; e.target.src = imgR; }} alt="cover" className="cover" />
             <div className="hero">
               <div className="details">
                 <div className="title1">

@@ -43,10 +43,6 @@
         font-size: 12px;
     }
 
-    img:before {
-        height: 260px !important;
-    }
-
     .select-filter-container {
         margin-left: 10px;
         width: 20%;
