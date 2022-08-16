@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Live Demo
+
+https://amhf-movies.herokuapp.com
+
 ## To run project locally 
     1. Add this line to package.json (choose your port)
         - "start": "concurrently \"react-scripts start\" \"json-server --watch db.json --port 1998\""
